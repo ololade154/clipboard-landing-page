@@ -21,6 +21,7 @@ header {
   background-repeat: no-repeat;
   padding: 80px 20px;
 }
+
 .logo > img {
   display: block;
   margin: 0 auto;
@@ -58,14 +59,56 @@ header {
 }
 .ios-btn,
 .mac-btn {
-  padding: 14px 70px;
+  padding: 14px 50px;
   outline: 0;
   border: 0;
-  border-radius: 24px;
+  border-radius: 25px;
   color: var(--btn-font);
   cursor: pointer;
   font-size: 18px;
   max-width: 100%;
+}
+.track-heading {
+  padding: 50px 18px;
+  text-align: center;
+}
+.track-heading h2 {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--Gray-700);
+  margin-bottom: 1rem;
+}
+.track-heading p {
+  font-size: 19px;
+  color: var(--Gray-500);
+  font-weight: 400;
+}
+.image > img {
+  width: 100%;
+  max-width: 300px;
+}
+.track-inner-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 18px;
+  align-items: center;
+  gap: 2rem;
+}
+.content {
+  text-align: center;
+}
+.content > div {
+  margin-top: 1.5rem;
+}
+.content h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--Gray-700);
+}
+.content p {
+  font-size: 20px;
+  color: var(--Gray-500);
+  font-weight: 400;
 }
 
 @media screen and (min-width: 650px) {
@@ -107,6 +150,55 @@ header {
     font-weight: 400;
     color: var(--Gray-500);
   }
+  .track-heading {
+    padding: 60px 100px;
+    text-align: center;
+  }
+  .track-heading h2 {
+    font-size: 45px;
+    font-weight: 600;
+    color: var(--Gray-700);
+    margin-bottom: 1rem;
+  }
+  .track-heading p {
+    font-size: 32px;
+    color: var(--Gray-500);
+    font-weight: 400;
+  }
+  .track-inner-content {
+    display: flex;
+    flex-direction: row;
+    padding: 40px 170px 40px 0px;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+  }
+  .image > img {
+    max-width: 650px;
+  }
+
+  .image {
+    flex: 1.2; /* image gets more space */
+  }
+  .content {
+    flex: 1; /* text a bit smaller */
+    text-align: left;
+  }
+
+  .content > div {
+    margin-top: 0.2rem;
+  }
+  .content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--Gray-700);
+  }
+  .content p {
+    font-size: 23px;
+    color: var(--Gray-500);
+    font-weight: 400;
+  }
+
   /* .track-heading {
     padding: 60px 80px;
     text-align: center;
